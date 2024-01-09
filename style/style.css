@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "PPFormula-Condensed-Black";
+  src: url(/assets/Fonts/PPFormula-CondensedBlack.otf);
+}
+
+@font-face {
+  font-family: "PPFormula-extrabold";
+  src: url(/assets/Fonts/PPFormula-ExtendedBold.otf);
+}
+
+@font-face {
+  font-family: "PPFormula-SemiBold";
+  src: url(/assets/Fonts/PPFormula-SemiExtendedBold.otf);
+}
+
+@font-face {
+  font-family: "PPFormula-medium";
+  src: url(/assets/Fonts/PPFormula-Medium.otf);
+}
+/* 
+@font-face {
+  font-family: ;
+  src: url();
+}
+
+@font-face {
+  font-family: ;
+  src: url();
+} */
+
+:root {
+  --primary-white: #fff;
+  --primary-black: #121212;
+
+  --secondary-one: #751500;
+  --secondary-two: #006049;
+  --secondary-three: #ff7300;
+
+  --grey-one: #fafafa;
+  --grey-two: #f1f4f4;
+  --grey-three: #e7eced;
+  --grey-four: #3f4142;
+  --grey-five: #282e30;
+  --grey-six: #171717;
+
+  --jira-primary-one: #370000;
+  --jira-primary-two: #ff1d25;
+  --jira-secondary-one: #e20018;
+  --jira-secondary-two: #ff78cc;
+  --jira-secondary-three: #ffbddb;
+
+  --conf-primary-one: #052747;
+  --conf-primary-two: #00afff;
+  --conf-secondary-one: #003661;
+  --conf-secondary-two: #003bff;
+  --conf-secondary-three: #00d1c3;
+
+  --spacing-regular: 0.8rem;
+  --spacing-half: 0.4rem;
+  --spacing-small: 0.2rem;
+  --spacing-big: 1.6rem;
+
+  --heading-one: "PPFormula-semibold", Arial, Helvetica, sans-serif;
+  --regular-text: "PPFormula-medium", Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  color: var(--primary-white);
+  background-color: var(--primary-white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  color: var(--primary-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-big);
+  backdrop-filter: blur(20px) saturate(120%);
+  -webkit-backdrop-filter: blur(20px) saturate(120%);
+  box-shadow: 0 8px 32px 0 rgba(135, 36, 31, 0.1);
+}
+
+header .wrapper {
+  padding: var(--spacing-big);
+}
+
+.wrapper h1 {
+  font-family: var(--heading-one);
+}
+
+.wrapper p {
+  font-family: var(--regular-text);
+}
+
+.wave-container {
+  background-color: transparent;
+  background-image: url(/assets/svg/Caelor-Red-03-16x9-01.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.wave-container::before {
+  content: "";
+  width: 100%;
+  height: 77px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 61vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 80' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0C22.4434 -1 28.9842 1 55 14C94.1849 32 121.997 34 158.5 34C198.5 36 200 26 240 31C280 35 320 53 360 53C400 53 440 35 480 32C520 29 560 41 600 50C640 59 680 65 720 68C760 71 800 71 840 62C880 53 920 35 960 37C1000 38 1040 59 1080 56C1120 53 1127.5 35 1147.5 22C1171.48 7 1185.65 0 1200 0V80H1180C1160 80 1120 80 1080 80C1040 80 1000 80 960 80C920 80 880 80 840 80C800 80 760 80 720 80C680 80 640 80 600 80C560 80 520 80 480 80C440 80 400 80 360 80C320 80 280 80 240 80C200 80 160 80 120 80C80 80 40 80 20 80H0V0.0103865Z' fill='%23ffffff'/></svg>");
+}
+
+@media (max-width: 850px) {
+  .wave-container::before {
+    height: 38.5px;
+  }
+}
+
+.wrapper .buttons {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0rem;
+  padding-top: var(--spacing-big);
+  margin-left: -0.5rem;
+}
+
+.buttons button {
+  margin-right: var(--spacing-regular);
+}
+
+.btn-grad {
+  width: 10.5rem;
+  background-image: linear-gradient(
+    to right,
+    #cb356b 0%,
+    #bd3f32 51%,
+    #cb356b 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 2px 10px var(--jira-primary-one);
+  border: none;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-grad-two {
+  width: 10.5rem;
+  background-image: linear-gradient(
+    to right,
+    #b24592 0%,
+    #f15f79 51%,
+    #b24592 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 2px 10px var(--jira-primary-one);
+  border: none;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad-two:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* main */
+
+main {
+  color: var(--primary-black);
+  padding: var(--spacing-big);
+  height: 200vh;
+}
+
+h2 {
+  font-family: var(--heading-one);
+}
