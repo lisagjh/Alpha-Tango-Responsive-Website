@@ -17,6 +17,7 @@
   font-family: "PPFormula-medium";
   src: url(../assets/Fonts/PPFormula-Medium.otf);
 }
+
 /* 
 @font-face {
   font-family: ;
@@ -68,29 +69,29 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  line-height: 1.6;
 }
 
 header {
   color: var(--primary-white);
-  background-color: var(--primary-white);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-nav {
-  color: var(--primary-white);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-big);
+  position: fixed;
+  width: 100vw;
+  padding: var(--spacing-regular);
   backdrop-filter: blur(20px) saturate(120%);
   -webkit-backdrop-filter: blur(20px) saturate(120%);
   box-shadow: 0 8px 32px 0 rgba(135, 36, 31, 0.1);
 }
 
-header .wrapper {
-  padding: var(--spacing-big);
+section p {
+  font-size: 1.1rem;
+}
+
+.wrapper {
+  color: var(--primary-white);
+  padding: 5.5rem var(--spacing-regular) 4.5rem var(--spacing-regular);
 }
 
 .wrapper h1 {
@@ -103,9 +104,10 @@ header .wrapper {
 
 .wave-container {
   background-color: transparent;
-  background-image: url(../assets/svg/Caelor-Red-03-16x9-01.svg);
+  background-image: url(../assets/svg/Caelor-Red-03-9x16.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
 }
 
@@ -122,34 +124,31 @@ header .wrapper {
   background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 80' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0C22.4434 -1 28.9842 1 55 14C94.1849 32 121.997 34 158.5 34C198.5 36 200 26 240 31C280 35 320 53 360 53C400 53 440 35 480 32C520 29 560 41 600 50C640 59 680 65 720 68C760 71 800 71 840 62C880 53 920 35 960 37C1000 38 1040 59 1080 56C1120 53 1127.5 35 1147.5 22C1171.48 7 1185.65 0 1200 0V80H1180C1160 80 1120 80 1080 80C1040 80 1000 80 960 80C920 80 880 80 840 80C800 80 760 80 720 80C680 80 640 80 600 80C560 80 520 80 480 80C440 80 400 80 360 80C320 80 280 80 240 80C200 80 160 80 120 80C80 80 40 80 20 80H0V0.0103865Z' fill='%23ffffff'/></svg>");
 }
 
-@media (max-width: 850px) {
-  .wave-container::before {
-    height: 38.5px;
-  }
-}
-
 .wrapper .buttons {
   display: flex;
   flex-direction: row;
-  padding-left: 0rem;
   padding-top: var(--spacing-big);
-  margin-left: -0.5rem;
-}
 
-.buttons button {
-  margin-right: var(--spacing-regular);
+  button {
+    font-size: 0.8rem;
+    width: 8.5rem;
+    height: 2.4rem;
+    padding: var(--spacing-small);
+    margin: 0;
+  }
+
+  button:first-of-type {
+    margin-right: var(--spacing-regular);
+  }
 }
 
 .btn-grad {
-  width: 10.5rem;
   background-image: linear-gradient(
     to right,
-    #cb356b 0%,
-    #bd3f32 51%,
-    #cb356b 100%
+    var(--jira-secondary-two) 0%,
+    var(--jira-primary-two) 51%,
+    var(--jira-secondary-two) 100%
   );
-  margin: 10px;
-  padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -168,15 +167,12 @@ header .wrapper {
 }
 
 .btn-grad-two {
-  width: 10.5rem;
   background-image: linear-gradient(
     to right,
-    #b24592 0%,
-    #f15f79 51%,
-    #b24592 100%
+    var(--jira-primary-two) 0%,
+    var(--jira-secondary-two) 51%,
+    var(--jira-primary-two) 100%
   );
-  margin: 10px;
-  padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -194,14 +190,72 @@ header .wrapper {
   text-decoration: none;
 }
 
-/* main */
+/** main */
 
 main {
   color: var(--primary-black);
-  padding: var(--spacing-big);
   height: 200vh;
 }
 
-h2 {
-  font-family: var(--heading-one);
+main p {
+  max-width: 40ch;
 }
+
+.main-wrapper {
+  padding: 1.5rem var(--spacing-regular) var(--spacing-big)
+    var(--spacing-regular);
+
+  h2 {
+    font-family: var(--heading-one);
+  }
+
+  img {
+    padding: var(--spacing-half);
+  }
+}
+
+.container-apps {
+  background-color: var(--conf-primary-two);
+}
+
+/* * media query */
+
+@media (min-width: 600px) {
+  .main-text-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "a a b"
+      "c c b";
+    padding-top: -1rem;
+
+    p {
+      padding-left: var(--spacing-half);
+    }
+  }
+
+  .main-text-grid p:first-of-type {
+    grid-area: a;
+  }
+
+  .main-text-grid img {
+    grid-area: b;
+    align-self: center;
+  }
+
+  .main-text-grid p:nth-of-type(2) {
+    grid-area: c;
+    padding-top: var(--spacing-regular);
+  }
+
+  .wrapper {
+    padding: 5.5rem var(--spacing-regular) 5rem var(--spacing-regular);
+  }
+}
+
+/* @media (max-width: 850px) {
+  .wave-container::before {
+    height: 38.5px;
+  }
+} */
