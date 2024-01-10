@@ -201,22 +201,35 @@ main p {
   max-width: 40ch;
 }
 
+h2 {
+  font-family: var(--heading-one);
+}
+
 .main-wrapper {
   padding: 1.5rem var(--spacing-regular) var(--spacing-big)
     var(--spacing-regular);
-
-  h2 {
-    font-family: var(--heading-one);
-  }
 
   img {
     padding: var(--spacing-half);
   }
 }
 
+
+/** apps container  */
+
 .container-apps {
-  background-color: var(--conf-primary-two);
+  padding: 1.5rem var(--spacing-regular) var(--spacing-big)
+    var(--spacing-regular);
 }
+
+
+.container-apps {
+  border-top: red 2px solid;
+}
+
+
+
+
 
 /* * media query */
 
