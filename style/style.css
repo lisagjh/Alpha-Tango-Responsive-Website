@@ -78,7 +78,9 @@ header {
   align-items: center;
   justify-content: space-between;
   position: fixed;
+
   width: 100%;
+  --spacing-regular: 1em;
   padding: var(--spacing-regular);
   backdrop-filter: blur(20px) saturate(120%);
   -webkit-backdrop-filter: blur(20px) saturate(120%);
