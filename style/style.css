@@ -78,7 +78,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   padding: var(--spacing-regular);
   backdrop-filter: blur(20px) saturate(120%);
   -webkit-backdrop-filter: blur(20px) saturate(120%);
@@ -94,8 +94,12 @@ section p {
   padding: 5.5rem var(--spacing-regular) 4.5rem var(--spacing-regular);
 }
 
-.wrapper h1 {
+h1, h2, h3 {
   font-family: var(--heading-one);
+}
+
+h3 {
+  font-size: 1.1rem;
 }
 
 .wrapper p {
@@ -194,7 +198,7 @@ section p {
 
 main {
   color: var(--primary-black);
-  height: 200vh;
+  height: 100vw;
 }
 
 main p {
@@ -227,6 +231,42 @@ h2 {
   border-top: red 2px solid;
 }
 
+
+
+
+/* *Footer */
+
+footer {
+  background-image: url(/assets/svg/Caelor-Black-03-16x9.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    0 0, 
+    100% 5%, 
+    100% 100%, 
+    0% 100%);
+    border-radius: 16px;
+  display: grid;
+  position:relative;
+  color: var(--primary-white);
+  bottom: 0;
+  width: 100%;
+  margin-top: 30rem;
+  padding: var(--spacing-regular);
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: var(--primary-white)
+  }
+}
+
+.footer-one, .footer-two, .footer-three {
+  padding-top: var(--spacing-regular);
+}
 
 
 
