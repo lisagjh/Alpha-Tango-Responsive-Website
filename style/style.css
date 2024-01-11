@@ -61,7 +61,8 @@
   --spacing-small: 0.2rem;
   --spacing-big: 1.6rem;
 
-  --heading-one: "PPFormula-semibold", Arial, Helvetica, sans-serif;
+  --heading-one: "PPFormula-extrabold", Arial, Helvetica, sans-serif;
+  --heading-two: "PPFormula-semibold", Arial, Helvetica, sans-serif;
   --regular-text: "PPFormula-medium", Arial, Helvetica, sans-serif;
 }
 
@@ -74,13 +75,14 @@
 
 /* text */
 
-h1,
+
 h2,
 h3 {
-  font-family: var(--heading-one);
+  font-family: var(--heading-two);
 }
 
 h1 {
+  font-family: var(--heading-one);
   font-size: 3rem;
 }
 
@@ -92,7 +94,7 @@ h3 {
   font-size: 1.1rem;
 }
 
-/* !!! */
+/* * */
 
 .header-wrapper {
   background-image: url(/assets/svg/Caelor-Red-02-16x9.svg);
@@ -208,6 +210,7 @@ main p {
 
 .app-wrapper,
 .about-wrapper {
+  height: 90vh;
   padding: 1.5rem var(--spacing-regular) var(--spacing-big)
     var(--spacing-regular);
 
@@ -249,7 +252,8 @@ main p {
   width: 9.2rem;
   padding: var(--spacing-small) var(--spacing-half);
   border: none;
-  border-radius: 0px 0px 6px 6px;
+  border-radius: 0px 0px 12px 12px;
+  border-top: 2px solid var(--jira-primary-one);
   transition: 0.2s ease-in-out;
 }
 
@@ -276,7 +280,7 @@ main p {
 .jira-buttons button:hover,
 button:active {
   background-color: var(--jira-secondary-two);
-  scale: 1.1;
+  scale: 1.05;
 }
 
 .confluence-title {
@@ -291,7 +295,8 @@ button:active {
   padding: var(--spacing-small) var(--spacing-half);
   width: 9.2rem;
   border: none;
-  border-radius: 0px 0px 6px 6px;
+  border-radius: 0px 0px 12px 12px;
+  border-top: 2px solid var(--conf-primary-one);
   transition: 0.25s ease-in-out;
 }
 
@@ -315,13 +320,14 @@ button:active {
   }
 }
 
-.confluence-buttons button:hover {
+.confluence-buttons button:hover, button:active {
   background-color: var(--conf-secondary-two);
-  scale: 1.1;
+  scale: 1.05;
 }
 
 
 /**  about section */
+
 
 
 /* *Footer */
@@ -336,7 +342,6 @@ footer {
   color: var(--primary-white);
   bottom: 0;
   width: 100%;
-  margin-top: 30rem;
   padding: var(--spacing-big) var(--spacing-regular);
 
   li {
