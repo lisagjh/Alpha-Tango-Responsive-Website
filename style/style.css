@@ -81,7 +81,6 @@
 
 /* text */
 
-
 h2,
 h3 {
   font-family: var(--heading-two);
@@ -220,7 +219,6 @@ main p {
 
 .app-wrapper,
 .about-wrapper {
-  height: 90vh;
   padding: 1.5rem var(--spacing-regular) var(--spacing-big)
     var(--spacing-regular);
 
@@ -231,16 +229,72 @@ main p {
 
 /** apps container  */
 
-.jira-apps,
-.confluence-apps {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+.jira-item,
+.confluence-item {
+  width: fit-content;
+
+  img {
+    width: 10em;
+  }
+
+  h3 {
+    text-align: center;
+  }
 }
 
-.carousel-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.jira-item a {
+  display: inline-block;
+  height: fit-content;
+  transition: 0.2s ease-in-out;
+}
+
+.jira-item a:hover {
+  scale: 1.05;
+  rotate: -2deg;
+}
+
+.jira-content,
+.confluence-content {
+  display: none;
+
+  color: var(--primary-white);
+  background-color: var(--grey-six);
+  margin: var(--spacing-small) 0;
+  padding: var(--spacing-half);
+  border-radius: 4px;
+
+  animation: myFrame 0.5s ease-in-out;
+
+  a {
+    font-family: var(--light-text);
+    font-size: 0.8em;
+    color: var(--jira-secondary-one);
+    transition: 0.15s ease-in-out;
+  }
+
+  a:hover {
+    color: var(--jira-primary-two);
+  }
+
+  li {
+    font-family: var(--light-text);
+    list-style: none;
+  }
+}
+
+.show-content {
+  display: block;
+}
+
+@keyframes myFrame {
+  from {
+    margin-top: -5%;
+    opacity: 50;
+  }
+  to {
+    margin-top: 0;
+    opacity: 100;
+  };
 }
 
 .jira-buttons,
@@ -330,15 +384,19 @@ button:active {
   }
 }
 
-.confluence-buttons button:hover, button:active {
+.confluence-buttons button:hover,
+button:active {
   background-color: var(--conf-secondary-two);
   scale: 1.05;
 }
 
+/** Interactie */
+
+.show-app-content {
+  display: block;
+}
 
 /**  about section */
-
-
 
 /* *Footer */
 
