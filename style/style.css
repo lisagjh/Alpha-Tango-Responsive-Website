@@ -18,6 +18,11 @@
   src: url(../assets/Fonts/PPFormula-Medium.otf);
 }
 
+@font-face {
+  font-family: "PPFormula-light";
+  src: url(../assets/Fonts/PPFormula-Light.otf);
+}
+
 /* 
 @font-face {
   font-family: ;
@@ -64,6 +69,7 @@
   --heading-one: "PPFormula-extrabold", Arial, Helvetica, sans-serif;
   --heading-two: "PPFormula-semibold", Arial, Helvetica, sans-serif;
   --regular-text: "PPFormula-medium", Arial, Helvetica, sans-serif;
+  --light-text: "PPFormula-light", Arial, Helvetica, sans-serif;
 }
 
 * {
