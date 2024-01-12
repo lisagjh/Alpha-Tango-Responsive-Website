@@ -259,17 +259,17 @@ main p {
 
   color: var(--primary-white);
   background-color: var(--grey-six);
+  width: fit-content;
   margin: var(--spacing-small) 0;
   padding: var(--spacing-half);
   border-radius: 4px;
 
-  animation: myFrame 0.5s ease-in-out;
+  animation: marginTop .25s ease, fade .4s ease;
 
   a {
     font-family: var(--light-text);
     font-size: 0.8em;
     color: var(--jira-secondary-one);
-    transition: 0.15s ease-in-out;
   }
 
   a:hover {
@@ -286,15 +286,22 @@ main p {
   display: block;
 }
 
-@keyframes myFrame {
+@keyframes marginTop {
   from {
-    margin-top: -5%;
-    opacity: 50;
+    margin-top: -3.5%;
   }
   to {
     margin-top: 0;
-    opacity: 100;
   };
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
 }
 
 .jira-buttons,
