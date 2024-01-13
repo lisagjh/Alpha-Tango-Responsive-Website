@@ -239,6 +239,10 @@ main p {
   max-width: 40ch;
 }
 
+.app-wrapper {
+  height: 100vh;
+}
+
 .app-wrapper,
 .about-wrapper {
   padding: var(--spacing-regular);
@@ -253,174 +257,41 @@ main p {
 
 
 .tab {
-overflow: hidden;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
 
-.tab button:active {
-  background-color: blue;
-}
-
-.jira-item, .confluence-item{
-  display: none;
-}
-
-.jira-item,
-.confluence-item {
-  width: fit-content;
-
-  img {
-    width: 10em;
-  }
-
-  h3 {
-    text-align: center;
-  }
-}
-
-.jira-item a {
-  display: inline-block;
-  height: fit-content;
-  transition: 0.2s ease-in-out;
-}
-
-.jira-item a:hover {
-  scale: 1.05;
-  rotate: -2deg;
-}
-
-.jira-content,
-.confluence-content {
-  display: none;
-
-  color: var(--primary-white);
-  background-color: var(--grey-six);
-  width: fit-content;
-  margin: var(--spacing-small) 0;
-  padding: var(--spacing-half);
-  border-radius: 4px;
-
-  animation: marginTop 0.4s ease, fade 0.6s ease;
-
-  a {
-    font-family: var(--light-text);
-    font-size: 0.8em;
-    color: var(--jira-secondary-one);
-  }
-
-  a:hover {
-    color: var(--jira-primary-two);
-  }
-
-  li {
-    font-family: var(--light-text);
-    list-style: none;
-  }
-}
-
-.show-content {
-  display: block;
-}
-
-@keyframes marginTop {
-  from {
-    margin-top: -20%;
-  }
-  to {
-    margin-top: 0;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
-}
-
-.jira-buttons,
-.confluence-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.jira-title {
-  font-family: var(--regular-text);
-  color: var(--primary-white);
-  background-color: var(--jira-primary-one);
-  width: 50%;
-  padding: var(--spacing-small) var(--spacing-half);
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
   border: none;
-  border-radius: 12px 12px 0px 0px;
-  transition: 0.25s ease-in-out;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
 }
 
-.jira-title:hover {
-  background: radial-gradient(
-      ellipse at top,
-      var(--jira-secondary-two),
-      var(--jira-secondary-one)
-    ),
-    radial-gradient(ellipse at bottom, var(--jira-primary-one), transparent);
-  background-size: 250%;
-  background-position: center;
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
 }
 
-.jira-buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  button {
-    background-color: var(--jira-secondary-three);
-    height: 1rem;
-    width: 1rem;
-    margin: var(--spacing-small);
-    border: none;
-    border-radius: 50%;
-    transition: 0.15s ease-in-out;
-  }
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
 }
 
-.confluence-title {
-  font-family: var(--regular-text);
-  color: var(--primary-white);
-  background-color: var(--conf-primary-one);
-  width: 50%;
-  padding: var(--spacing-small) var(--spacing-half);
-  border: none;
-  border-radius: 12px 12px 0px 0px;
-  transition: 0.25s ease-in-out;
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
 
-.confluence-title:hover {
-  background: radial-gradient(
-      ellipse at top,
-      var(--conf-secondary-two),
-      var(--conf-secondary-three)
-    ),
-    radial-gradient(ellipse at bottom, var(--conf-secondary-one), transparent);
-  background-size: 250%;
-  background-position: center;
-}
-
-.confluence-buttons {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-
-  button {
-    background-color: var(--conf-primary-two);
-    height: 1rem;
-    width: 1rem;
-    margin: var(--spacing-small);
-    border: none;
-    border-radius: 50%;
-    transition: 0.15s ease-in-out;
-  }
-}
-
-/** Interactie */
+/* Interactie */
 
 .show-app-content {
   display: block;
@@ -495,9 +366,3 @@ footer {
     padding: 5.5rem var(--spacing-regular) 5rem var(--spacing-regular);
   }
 }
-
-/* @media (max-width: 850px) {
-  .wave-container::before {
-    height: 38.5px;
-  }
-} */
