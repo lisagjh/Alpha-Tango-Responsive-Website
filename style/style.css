@@ -85,6 +85,10 @@
   line-height: 1.6;
 }
 
+body {
+  font-family: var(--regular-text);
+}
+
 /* text */
 
 h2,
@@ -238,15 +242,15 @@ header {
 
 main {
   color: var(--primary-black);
-  height: 100vw;
 }
 
 main p {
   max-width: 40ch;
 }
 
+/* !! verwijder wanneer klaar aub */
 .app-wrapper {
-  height: 100vh;
+  margin-bottom: 20rem;
 }
 
 .app-wrapper,
@@ -263,33 +267,41 @@ main p {
 
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
 }
 
 .tab button {
-  background-color: inherit;
-  float: left;
   border: none;
-  outline: none;
+  border-radius: 6px 6px 0px 0px;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: var(--spacing-small) var(--spacing-big);
   transition: 0.3s;
 }
 
-.tab button:hover {
-  background-color: #ddd;
+.tab-conf {
+  color: var(--primary-white);
+  background-color: var(--conf-primary-one);
 }
 
-.tab button.active {
-  background-color: #ccc;
+.tab-conf:hover,
+.tab-conf:active {
+  background-color: var(--conf-primary-two);
 }
 
-.jira-tab-content, .conf-tab-content {
+.tab-jira {
+  color: var(--primary-white);
+  background-color: var(--jira-primary-one);
+}
+
+.tab-jira:hover,
+.tab-jira:active {
+  background-color: var(--jira-primary-two);
+}
+
+.jira-tab-content,
+.conf-tab-content {
   display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+  padding: var(--spacing-half) var(--spacing-regular);
+  border: 1px solid var(--grey-four);
 }
 
 /* Interactie */
@@ -300,6 +312,27 @@ main p {
 
 .hide {
   display: none;
+}
+
+/* Carousel layout */
+
+.conf-carousel {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  a {
+    color: var(--primary-black);
+    text-decoration: none;
+  }
+  li {
+    color: var(--primary-black);
+    list-style: none;
+  }
+}
+
+.conf-content-element {
+  text-align: center;
+  margin: var(--spacing-regular);
 }
 
 /**  about section */
