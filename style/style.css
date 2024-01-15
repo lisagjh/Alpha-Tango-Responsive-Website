@@ -270,10 +270,11 @@ main p {
 }
 
 .tab button {
-  border: none;
-  border-radius: 6px 6px 0px 0px;
+  font-size: 0.95rem;
   cursor: pointer;
   padding: var(--spacing-small) var(--spacing-big);
+  border: none;
+  border-radius: 6px 6px 0px 0px;
   transition: 0.3s;
 }
 
@@ -316,11 +317,20 @@ main p {
 
 /* Carousel layout */
 
-.conf-carousel {
+.conf-container, .jira-container {
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
+}
+
+.conf-carousel, .jira-carousel {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   a {
+    display: inline-block;
     color: var(--primary-black);
     text-decoration: none;
   }
@@ -330,9 +340,24 @@ main p {
   }
 }
 
-.conf-content-element {
+.conf-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.jira-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.conf-content-element, .jira-content-element {
   text-align: center;
   margin: var(--spacing-regular);
+}
+
+.conf-prev-button,
+.conf-next-button, .jira-prev-button, .jira-next-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 /**  about section */
