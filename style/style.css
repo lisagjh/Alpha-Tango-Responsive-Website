@@ -248,9 +248,10 @@ main p {
   max-width: 40ch;
 }
 
-/* !! verwijder wanneer klaar aub */
+/** apps container  */
+
 .app-wrapper {
-  margin-bottom: 20rem;
+  margin: 5rem 0;
 }
 
 .app-wrapper,
@@ -263,9 +264,8 @@ main p {
   }
 }
 
-/** apps container  */
-
 .tab {
+  margin-left: var(--spacing-regular);
   overflow: hidden;
 }
 
@@ -303,6 +303,7 @@ main p {
   display: none;
   padding: var(--spacing-half) var(--spacing-regular);
   border: 1px solid var(--grey-four);
+  border-radius: 4px;
 }
 
 /* Interactie */
@@ -317,6 +318,10 @@ main p {
 
 /* Carousel layout */
 
+.carousel-wrapper {
+  margin-top: var(--spacing-regular);
+}
+
 .conf-container, .jira-container {
   display: flex;
   flex-direction: row;
@@ -326,7 +331,6 @@ main p {
   display: flex;
   flex-direction: row;
   overflow: scroll;
-  scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
   scrollbar-width: none;
   a {
@@ -354,11 +358,46 @@ main p {
 }
 
 .conf-prev-button,
-.conf-next-button, .jira-prev-button, .jira-next-button {
+.conf-next-button {
+  font-size: 1.4rem;
   background-color: transparent;
   border: none;
   outline: none;
 }
+
+.conf-prev-button:hover, .conf-next-button:hover {
+  color: var(--conf-primary-two);
+  scale: 1.1;
+  transition: 0.25s;
+}
+
+.active-conf-btn {
+  background-color: var(--conf-primary-two);
+}
+
+.jira-prev-button, .jira-next-button {
+  font-size: 1.4rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.jira-prev-button:hover, .jira-next-button:hover {
+  color: var(--jira-primary-two);
+  scale: 1.1;
+  transition: 0.25s;
+}
+
+.active-jira-btn {
+  background-color: var(--jira-primary-two);
+}
+
+/* * app description */
+
+
+
+
+
 
 /**  about section */
 

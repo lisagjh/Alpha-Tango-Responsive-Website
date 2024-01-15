@@ -24,10 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   ConfBtn.addEventListener("click", function () {
     showPage(ConfContent, JiraContent);
+    ConfBtn.classList.add('active-conf-btn');
+    JiraBtn.classList.remove('active-jira-btn');
   });
 
   JiraBtn.addEventListener("click", function () {
     showPage(JiraContent, ConfContent);
+    ConfBtn.classList.remove('active-conf-btn');
+    JiraBtn.classList.add('active-jira-btn');
   });
 
   // Initial setup: Show page 1
@@ -43,13 +47,14 @@ function showPage(show, hide) {
 }
 
 
-//   https://medium.com/@algopoint.ltd/how-to-create-a-slideshow-carousel-using-html-css-js-7ab0561b39b3
+// carousel confluence
+
+const itemWidth = 226
 
 const prevConf = document.querySelector('.conf-prev-button')
 const nextConf = document.querySelector('.conf-next-button')
 const listConf = document.querySelector('.conf-carousel')
 
-const itemWidth = 228
 
 prevConf.addEventListener("click", function(){
     listConf.scrollLeft -= itemWidth;
@@ -58,6 +63,8 @@ prevConf.addEventListener("click", function(){
 nextConf.addEventListener("click", function(){
     listConf.scrollLeft += itemWidth;
 })
+
+// carousel jira
 
 const prevJira = document.querySelector('.jira-prev-button')
 const nextJira = document.querySelector('.jira-next-button')
@@ -70,9 +77,3 @@ prevJira.addEventListener("click", function(){
 nextJira.addEventListener("click", function(){
     listJira.scrollLeft += itemWidth;
 })
-
-
-
-
-
-  
