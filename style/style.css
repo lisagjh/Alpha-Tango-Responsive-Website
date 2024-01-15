@@ -23,6 +23,11 @@
   src: url(../assets/Fonts/PPFormula-Light.otf);
 }
 
+@font-face {
+  font-family: "PPFormula-SemiExtBold";
+  src: url(../assets/Fonts/PPFormula-SemiExtendedBold.otf);
+}
+
 /* 
 @font-face {
   font-family: ;
@@ -70,6 +75,7 @@
   --heading-two: "PPFormula-semibold", Arial, Helvetica, sans-serif;
   --regular-text: "PPFormula-medium", Arial, Helvetica, sans-serif;
   --light-text: "PPFormula-light", Arial, Helvetica, sans-serif;
+  --extra-heading: "PPFormula-SemiExtBold", Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -255,14 +261,12 @@ main p {
 
 /** apps container  */
 
-
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 
-/* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
   float: left;
@@ -273,18 +277,15 @@ main p {
   transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: #ccc;
 }
 
-/* Style the tab content */
-.tabcontent {
+.jira-tab-content, .conf-tab-content {
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
@@ -293,8 +294,12 @@ main p {
 
 /* Interactie */
 
-.show-app-content {
+.show {
   display: block;
+}
+
+.hide {
+  display: none;
 }
 
 /**  about section */
