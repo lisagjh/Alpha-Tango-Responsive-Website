@@ -116,13 +116,47 @@ p {
 /* * */
 
 .header-wrapper {
-  background-image: url(../assets/svg/Caelor-Red-02-16x9.svg);
+  background-image: url(../assets/svg/Caelor-Blue-02-16x9.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
   position: relative;
+  animation: slide-back 0.3s ease-in;
 }
+
+.header-wrapper-jira-svg {
+  background-image: url(../assets/svg/Caelor-Red-02-16x9.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: slide-in 0.3s ease-in;
+}
+
+@keyframes slide-back {
+  from {
+    opacity: 0;
+    transform: translateY(75%);
+  }
+  to {
+    opacity: 100;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-75%);
+  }
+  to {
+    opacity: 100;
+    transform: translateY(0%);
+  }
+}
+
+/* @keyframes header-anim {
+
+} */
 
 header {
   color: var(--primary-white);
@@ -280,6 +314,10 @@ main p {
 
 .tab-conf {
   color: var(--primary-white);
+  background-color: var(--conf-primary-two);
+}
+
+.tab-conf-passive {
   background-color: var(--conf-primary-one);
 }
 
@@ -322,17 +360,22 @@ main p {
   margin-top: var(--spacing-regular);
 }
 
-.conf-container, .jira-container {
+.conf-container,
+.jira-container {
   display: flex;
   flex-direction: row;
 }
 
-.conf-carousel, .jira-carousel {
+.conf-carousel,
+.jira-carousel {
   display: flex;
   flex-direction: row;
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+
+  animation: fade 0.3s ease-in-out;
+
   a {
     display: inline-block;
     color: var(--primary-black);
@@ -352,9 +395,11 @@ main p {
   display: none;
 }
 
-.conf-content-element, .jira-content-element {
+.conf-content-element,
+.jira-content-element {
   text-align: center;
   margin: var(--spacing-regular);
+  animation: fade 0.25s ease-in-out;
 }
 
 .conf-prev-button,
@@ -365,7 +410,8 @@ main p {
   outline: none;
 }
 
-.conf-prev-button:hover, .conf-next-button:hover {
+.conf-prev-button:hover,
+.conf-next-button:hover {
   color: var(--conf-primary-two);
   scale: 1.1;
   transition: 0.25s;
@@ -375,14 +421,16 @@ main p {
   background-color: var(--conf-primary-two);
 }
 
-.jira-prev-button, .jira-next-button {
+.jira-prev-button,
+.jira-next-button {
   font-size: 1.4rem;
   background-color: transparent;
   border: none;
   outline: none;
 }
 
-.jira-prev-button:hover, .jira-next-button:hover {
+.jira-prev-button:hover,
+.jira-next-button:hover {
   color: var(--jira-primary-two);
   scale: 1.1;
   transition: 0.25s;
@@ -392,12 +440,18 @@ main p {
   background-color: var(--jira-primary-two);
 }
 
+/*  animation */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
 /* * app description */
-
-
-
-
-
 
 /**  about section */
 
