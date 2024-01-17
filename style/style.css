@@ -375,8 +375,6 @@ main p {
   -ms-overflow-style: none;
   scrollbar-width: none;
 
-  animation: fade 0.3s ease-in-out;
-
   a {
     display: inline-block;
     color: var(--primary-black);
@@ -385,6 +383,36 @@ main p {
   li {
     color: var(--primary-black);
     list-style: none;
+  }
+}
+
+.conf-carousel {
+  animation: fade 0.3s ease-in-out;
+}
+
+.jira-carousel {
+  animation: fade-2 0.3s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 100;
+  }
+}
+
+@keyframes fade-2 {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 100;
   }
 }
 
@@ -400,7 +428,7 @@ main p {
 .jira-content-element {
   text-align: center;
   margin: var(--spacing-regular);
-  animation: fade 0.25s ease-in-out;
+
 }
 
 .conf-prev-button,
@@ -441,16 +469,6 @@ main p {
   background-color: var(--jira-primary-two);
 }
 
-/*  animation */
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
-}
 
 /* * app description */
 
