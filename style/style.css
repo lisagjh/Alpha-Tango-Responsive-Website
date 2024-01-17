@@ -181,7 +181,7 @@ header {
 
   p {
     font-family: var(--regular-text);
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -314,6 +314,7 @@ main p {
 
 .tab-conf {
   color: var(--primary-white);
+  --conf-primary-two: #0d9de0;
   background-color: var(--conf-primary-two);
 }
 
