@@ -1,24 +1,25 @@
 //  tabs v2
 
-  var JiraBtn = document.querySelector(".tab-jira");
-  var ConfBtn = document.querySelector(".tab-conf");
-  var JiraContent = document.querySelector("#jira-tab-content");
-  var ConfContent = document.querySelector("#conf-tab-content");
+  var JiraBtn = document.querySelector("#jira-btn");
+  var ConfBtn = document.querySelector("#confluence-btn");
+  var JiraContent = document.querySelector(".jira-content");
+  var ConfContent = document.querySelector(".confluence-content");
   var header = document.querySelector(".header-wrapper");
 
   ConfBtn.addEventListener("click", function () {
     showPage(ConfContent, JiraContent);
-    ConfBtn.classList.remove('tab-conf-passive');
-    JiraBtn.classList.remove('active-jira-btn');
-    header.classList.remove(".header-wrapper-jira-svg");
-    header.classList.remove("header-wrapper-jira-svg")
+    ConfContent.classList.remove("hide");
+    JiraContent.classList.remove("show");
+    ConfBtn.classList.remove("passive-tab");
+    JiraBtn.classList.add("passive-tab")
   });
 
   JiraBtn.addEventListener("click", function () {
     showPage(JiraContent, ConfContent);
-    ConfBtn.classList.add('tab-conf-passive');
-    JiraBtn.classList.add('active-jira-btn');
-    header.classList.add("header-wrapper-jira-svg")
+    JiraContent.classList.add("show");
+    ConfContent.classList.add("hide");
+    JiraBtn.classList.remove("passive-tab")
+    ConfBtn.classList.add("passive-tab");
   });
 
   // Initial setup: Show page 1

@@ -229,8 +229,7 @@ main p {
 .app-wrapper,
 .about-wrapper {
   padding: var(--spacing-regular) var(--spacing-big);
-  --spacing-big: 2rem;
-  margin-bottom: var(--spacing-big);
+  margin: var(--spacing-big) 0;
   max-width: 49rem;
 
   img {
@@ -285,16 +284,6 @@ main p {
   border-radius: 4px;
 }
 
-/* Interactie */
-
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
-
 /* app showcase v2 */
 
 .app-tabs {
@@ -306,10 +295,6 @@ main p {
   button {
     font-size: 1rem;
     background-color: var(--grey-one);
-    background-image: linear-gradient(
-      var(--grey-three) 0%,
-      var(--grey-one) 100%
-    );
     color: var(--primary-black);
     padding: var(--spacing-small) var(--spacing-half);
     width: 7rem;
@@ -318,15 +303,16 @@ main p {
     transition: background-color 0.15s ease-in-out;
   }
 
-  button:nth-of-type(2) {
-    background-color: var(--grey-two);
-    background-image: none;
-    font-size: 0.9rem;
-  }
-
   button:hover {
     background-color: var(--grey-three);
   }
+}
+
+.app-tabs .passive-tab {
+  background-color: var(--grey-two);
+  background-image: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
 }
 
 /* app card */
@@ -337,11 +323,11 @@ main p {
   align-items: center;
   background-color: var(--grey-one);
   color: var(--primary-black);
-  box-shadow: 0px 2px 30px 0px var(--grey-five);
   width: 95%;
+  min-width: 16rem;
   max-width: 47rem;
   border-radius: 0px 12px 12px 12px;
-  padding: var(--spacing-regular);
+  padding: var(--spacing-regular) var(--spacing-big);
 
   img {
     align-self: center;
@@ -366,7 +352,7 @@ main p {
     width: fit-content;
     justify-self: start;
     margin-top: var(--spacing-big);
-    padding: var(--spacing-regular) var(--spacing-regular);
+    padding: var(--spacing-regular);
     border: 0;
     border-radius: 6px;
     transition: background 0.2s ease-in-out;
@@ -423,6 +409,31 @@ main p {
       background-color: var(--grey-extra);
     }
   }
+}
+
+.jira-content {
+  display: none;
+
+  button {
+    background-color: var(--jira-primary-one);
+  }
+
+  button:hover {
+    background-color: var(--jira-secondary-one);
+  }
+}
+
+
+
+
+/* Interactie */
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
 
 /* *Footer */
