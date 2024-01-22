@@ -37,11 +37,11 @@ function showPage(show, hide) {
 
 // carousel confluence
 
-const itemWidth = 225
+const itemWidth = 288.5
 
-const prevConf = document.querySelector('.conf-prev-button')
-const nextConf = document.querySelector('.conf-next-button')
-const listConf = document.querySelector('.conf-carousel')
+const prevConf = document.querySelector('.conf-prev-btn')
+const nextConf = document.querySelector('.conf-next-btn')
+const listConf = document.querySelector('.carousel-cards')
 
 
 prevConf.addEventListener("click", function(){
@@ -54,8 +54,8 @@ nextConf.addEventListener("click", function(){
 
 // carousel jira
 
-const prevJira = document.querySelector('.jira-prev-button')
-const nextJira = document.querySelector('.jira-next-button')
+const prevJira = document.querySelector('.jira-prev-btn')
+const nextJira = document.querySelector('.jira-next-btn')
 const listJira = document.querySelector('.jira-carousel')
 
 prevJira.addEventListener("click", function(){
