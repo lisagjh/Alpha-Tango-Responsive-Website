@@ -330,6 +330,7 @@ main p {
   justify-content: space-between;
   min-width: 14rem;
   width: 100%;
+  max-width: 50rem;
   height: 35rem;
   --spacing-regular: 1.2rem;
   padding: var(--spacing-regular);
@@ -511,24 +512,15 @@ footer {
 /* * media query */
 
 @media (min-width: 430px) {
-  h1 {
-    font-size: 2.8rem;
-  }
   .app-card {
-    width: 50rem;
+    width: 100rem;
   }
 }
 
 @media (min-width: 610px) {
-  .header-wrapper {
-    height: 30rem;
-    max-height: 35rem;
-
     h1 {
       align-self: center;
-      /* margin-top: -3rem; */
     }
-  }
 
   .about-text-grid {
     display: grid;
@@ -555,47 +547,6 @@ footer {
   .app-showcase-v2 {
     width: 95%;
     max-width: 47rem;
-  }
-
-  .app-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr 1fr;
-
-    img {
-      grid-column: 1/2;
-      grid-row: 1/3;
-      width: 150px;
-      align-self: end;
-      justify-self: center;
-    }
-
-    h3 {
-      grid-column: 2/4;
-      grid-row: 1/2;
-      justify-self: center;
-    }
-
-    p {
-      grid-column: 2/4;
-      grid-row: 2/3;
-    }
-
-    button {
-      grid-column: 1/2;
-      grid-row: 3/4;
-      margin-top: 0;
-      justify-self: center;
-    }
-
-    .app-btns {
-      grid-column: 2/5;
-      grid-row: 3/4;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-    }
   }
 }
 
@@ -647,19 +598,16 @@ footer {
     align-self: center;
   }
 
-  .app-showcase-v2 {
-    width: 95%;
-    max-width: 47rem;
-  }
-
   .app-card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    min-width: 25rem;
+    max-height: 28rem;
 
     img {
       grid-column: 1/2;
-      grid-row: 1/3;
+      grid-row: 1/2;
       width: 150px;
       justify-self: center;
       align-self: end;
@@ -673,13 +621,14 @@ footer {
     }
 
     p {
-      grid-column: 2/4;
+      grid-column: 1/4;
       grid-row: 2/3;
       font-size: 1rem;
+      padding: var(--spacing-half);
     }
 
     button {
-      grid-column: 1/2;
+      grid-column: 1/3;
       grid-row: 3/4;
       margin-top: 0;
       justify-self: center;
