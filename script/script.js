@@ -1,5 +1,4 @@
-//  tabs v2
-
+//  tabs 
   var JiraBtn = document.querySelector("#jira-btn");
   var ConfBtn = document.querySelector("#confluence-btn");
   var JiraContent = document.querySelector(".jira-content");
@@ -23,7 +22,6 @@
 
   // Initial setup: Show page 1
   showPage(ConfContent, JiraContent);
-
 
 function showPage(show, hide) {
   // Show the selected page

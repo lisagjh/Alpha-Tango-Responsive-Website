@@ -293,7 +293,7 @@ main p {
   min-width: 16rem;
   max-width: 47rem;
   height: 100%;
-  border: 1px solid var(--grey-two);
+  border: 1px solid var(--grey-three);
   border-radius: 0px 12px 12px 12px;
 }
 
@@ -337,7 +337,7 @@ main p {
   --spacing-big: 2rem;
   margin: 0 var(--spacing-big);
   border-radius: 6px;
-  border: 1px solid var(--grey-four);
+  border: 1px solid var(--grey-three);
 
   img {
     align-self: center;
