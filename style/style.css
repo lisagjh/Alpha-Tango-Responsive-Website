@@ -550,7 +550,18 @@ footer {
   }
 }
 
+@media (min-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+
 @media (min-width: 820px) {
+  h1 {
+    font-size: 3.4rem;
+  }
+
   .wrapper {
     display: grid;
     align-items: center;
