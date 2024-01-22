@@ -4,7 +4,6 @@
   var ConfBtn = document.querySelector("#confluence-btn");
   var JiraContent = document.querySelector(".jira-content");
   var ConfContent = document.querySelector(".confluence-content");
-  var header = document.querySelector(".header-wrapper");
 
   ConfBtn.addEventListener("click", function () {
     showPage(ConfContent, JiraContent);
@@ -46,10 +45,12 @@ const listConf = document.querySelector('.carousel-cards')
 
 prevConf.addEventListener("click", function(){
     listConf.scrollLeft -= itemWidth;
+    // door -= word er terug gescrollt als je op de knop drukt
 })
 
 nextConf.addEventListener("click", function(){
     listConf.scrollLeft += itemWidth;
+    // door += word er verder gescrollt als je op de knop drukt
 })
 
 // carousel jira
