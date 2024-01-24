@@ -2,10 +2,6 @@
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 De opdrachtgever, Alpha Tango, wilt een homepage voor het bedrijf Caelor waar zij een nieuwe visuele identiteit voor hebben gemaakt.
 
-### Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-
 ![Untitled_Artwork](https://github.com/lisagjh/the-startup/assets/131701505/db6d7da2-51f9-4fa8-a60c-f86413244c18)
 
 De live versie is hier te bekijken: 
