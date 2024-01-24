@@ -28,17 +28,6 @@
   src: url(../assets/Fonts/PPFormula-SemiExtendedBold.otf);
 }
 
-/* 
-@font-face {
-  font-family: ;
-  src: url();
-}
-
-@font-face {
-  font-family: ;
-  src: url();
-} */
-
 :root {
   --primary-white: #fff;
   --primary-black: #121212;
@@ -444,32 +433,6 @@ main p {
   }
 }
 
-.carousel-dots {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  button {
-    background-color: var(--grey-extra);
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 50%;
-    border: none;
-    margin: 0 auto;
-    scale: 0.8;
-    transition: background-color 0.15s ease-in-out;
-  }
-
-  button:hover {
-    background-color: var(--grey-five);
-  }
-}
-
-.active-dot {
-  background-color: var(--grey-four);
-}
-
 /* Interactie */
 
 .show {
@@ -480,33 +443,37 @@ main p {
   display: none;
 }
 
+/*  about */
+
+.about-wrapper img {
+  width: 100%;
+  max-width: 600px;
+}
+
 /* *Footer */
 
 footer {
-  background-image: url(../assets/svg/Caelor-Black-03-16x9.svg);
+  background-image: url(../assets/svg/Caelor-Black-06-16x9.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: grid;
-  position: relative;
   color: var(--primary-white);
-  bottom: 0;
+  min-height: 50vh;
+  height: fit-content;
   width: 100%;
   padding: var(--spacing-big) var(--spacing-regular);
 
+  h4 {
+    padding-top: var(--spacing-regular);
+  }
+
   li {
+    font-family: var(--light-text);
+    padding-bottom: var(--spacing-half);
     list-style: none;
+    max-width: 25ch;
   }
-
-  a {
-    color: var(--primary-white);
-  }
-}
-
-.footer-one,
-.footer-two,
-.footer-three {
-  padding-top: var(--spacing-regular);
 }
 
 /* * media query */
@@ -515,38 +482,89 @@ footer {
   .app-card {
     width: 100rem;
   }
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-areas:
+      "one one"
+      "two three";
+  }
+
+  .footer-list-one {
+    grid-area: one;
+    justify-self: center;
+  }
+
+  .footer-list-two {
+    grid-area: two;
+    justify-self: center;
+  }
+
+  .footer-list-three {
+    grid-area: three;
+    justify-self: center;
+  }
 }
 
 @media (min-width: 610px) {
-    h1 {
-      align-self: center;
-    }
+  h1 {
+    align-self: center;
+  }
 
   .about-text-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-      "a a c"
+      "a c c"
       "b b b";
     row-gap: 0.5rem;
   }
 
   .about-text-grid p:first-of-type {
     grid-area: a;
+    align-self: center;
   }
 
   .about-text-grid p:nth-of-type(2) {
     grid-area: b;
+    align-self: flex-start;
   }
 
   .about-text-grid img {
     grid-area: c;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
   }
 
-  .app-showcase-v2 {
-    width: 95%;
+  .footer-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "one two three";
+    width: 100%;
+  }
+
+  .footer-list-one {
+    grid-area: one;
+    justify-self: center;
+  }
+
+  .footer-list-two {
+    grid-area: two;
+    justify-self: center;
+  }
+
+  .footer-list-three {
+    grid-area: three;
+    justify-self: center;
+  }
+
+  .footer-wrapper {
+    width: 100%;
     max-width: 47rem;
+    justify-self: center;
+    margin: auto 0;
   }
 }
 
@@ -555,7 +573,6 @@ footer {
     font-size: 3rem;
   }
 }
-
 
 @media (min-width: 820px) {
   h1 {
