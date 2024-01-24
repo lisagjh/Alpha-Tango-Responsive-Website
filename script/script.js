@@ -64,3 +64,10 @@ prevJira.addEventListener("click", function(){
 nextJira.addEventListener("click", function(){
     listJira.scrollLeft += itemWidth;
 })
+
+// dark mode btn
+
+function colorSchemeToggle() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+} 
