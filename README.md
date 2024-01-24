@@ -62,7 +62,7 @@ Er is een usertest gedaan, een lighthouse test, en er is een HTMl validator gebr
 
 ## Checklist
 
-### Projectboard
+#### Projectboard
 https://github.com/users/lisagjh/projects/3/views/1
 
 ### To Do
