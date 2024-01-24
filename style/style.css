@@ -184,7 +184,8 @@ main p {
 /** apps container  */
 
 .app-wrapper,
-.about-wrapper {
+.about-wrapper,
+.footer-wrapper {
   padding: var(--spacing-regular) var(--spacing-big);
   margin: var(--spacing-big) 0;
   max-width: 49rem;
@@ -430,6 +431,7 @@ main p {
 
   .carousel-btn:hover {
     color: var(--grey-four);
+    scale: 1.15;
   }
 
   .carousel-btn:active {
@@ -479,19 +481,28 @@ main p {
   max-width: 600px;
 }
 
+.about-wrapper {
+  margin-bottom: 10rem;
+}
+
+/* other  */
+
+button:focus-visible {
+  outline: 3px solid var(--jira-primary-two);
+}
+
 /* *Footer */
 
 footer {
-  background-image: url(../assets/svg/Caelor-Black-06-16x9.svg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: var(--primary-black);
   display: grid;
   color: var(--primary-white);
   min-height: 50vh;
   height: fit-content;
   width: 100%;
-  padding: var(--spacing-big) var(--spacing-regular);
 
   h4 {
     padding-top: var(--spacing-regular);
@@ -516,22 +527,26 @@ footer {
     display: grid;
     grid-template-areas:
       "one one"
-      "two three";
+      "two three"
+      "four four";
   }
 
   .footer-list-one {
     grid-area: one;
-    justify-self: center;
+    justify-self: start;
   }
 
   .footer-list-two {
     grid-area: two;
-    justify-self: center;
   }
 
   .footer-list-three {
     grid-area: three;
-    justify-self: center;
+  }
+
+  footer img {
+    grid-area: four;
+    width: 100%;
   }
 }
 
@@ -569,8 +584,9 @@ footer {
 
   .footer-wrapper {
     display: grid;
-    grid-template-areas: 
-    "one two three";
+    grid-template-areas:
+      "one two three"
+      "four";
     width: 100%;
   }
 
@@ -594,6 +610,10 @@ footer {
     max-width: 47rem;
     justify-self: center;
     margin: auto 0;
+  }
+
+  img {
+    grid-area: four;
   }
 }
 
