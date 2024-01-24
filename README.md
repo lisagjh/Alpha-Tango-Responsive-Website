@@ -2,11 +2,8 @@
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 De opdrachtgever, Alpha Tango, wilt een homepage voor het bedrijf Caelor waar zij een nieuwe visuele identiteit voor hebben gemaakt.
 
-### Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
+![Untitled_Artwork 2](https://github.com/lisagjh/Alpha-Tango-Responsive-Website/assets/131701505/b5f99c14-f037-4e55-b53a-8c5471addc7e)
 
-![Untitled_Artwork](https://github.com/lisagjh/the-startup/assets/131701505/db6d7da2-51f9-4fa8-a60c-f86413244c18)
 
 De live versie is hier te bekijken: 
 
@@ -16,11 +13,10 @@ https://lisagjh.github.io/the-startup/
 
 ## Inhoud
 
-* Beschrijving
-* Ontwerp
-* Kenmerken
-* Proces
-* Checklist
+* [Ontwerp](https://github.com/lisagjh/Alpha-tango-the-startup/blob/main/README.md#ontwerp-probleem--oplossing)
+* [Kenmerken](https://github.com/lisagjh/Alpha-tango-the-startup/blob/main/README.md#kenmerken)
+* [Proces](https://github.com/lisagjh/Alpha-tango-the-startup/blob/main/README.md#proces)
+* [Checklist](https://github.com/lisagjh/Alpha-tango-the-startup/blob/main/README.md#checklist)
 
 ## Ontwerp: probleem & oplossing
 
@@ -67,12 +63,12 @@ Er is een usertest gedaan, een lighthouse test, en er is een HTMl validator gebr
 
 ## Checklist
 
-### Projectboard
+#### Projectboard
 https://github.com/users/lisagjh/projects/3/views/1
 
 ### To Do
 Er zijn nog een aantal dingen te doen. 
-- [ ] focus state buttons
+- [x] focus state buttons
 - [ ] html semantiek
 
 Optioneel:
