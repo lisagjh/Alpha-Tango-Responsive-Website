@@ -120,10 +120,10 @@ p {
 }
 
 .header-wrapper h1 {
-  animation: slide-back 0.5s ease-in-out;
+  animation: slide-in 0.5s ease-in-out;
 }
 
-@keyframes slide-back {
+@keyframes slide-in {
   from {
     opacity: 0;
     transform: translateX(-75%);
@@ -192,6 +192,16 @@ main p {
   img {
     padding: var(--spacing-half);
   }
+
+  a {
+    color: var(--conf-secondary-one);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--conf-secondary-two);
+    text-decoration: underline;
+  }
 }
 
 .tab {
@@ -239,6 +249,25 @@ main p {
   padding: var(--spacing-half) var(--spacing-regular);
   border: 1px solid var(--grey-four);
   border-radius: 4px;
+}
+
+.about-wrapper {
+  animation: slide-in 0.5s ease-in-out;
+}
+
+.app-wrapper {
+  animation: slide-back 0.5s ease-in-out;
+}
+
+@keyframes slide-back {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 100;
+    transform: translateY(0%);
+  }
 }
 
 /* app showcase v2 */
