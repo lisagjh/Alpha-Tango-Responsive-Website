@@ -67,7 +67,7 @@ https://github.com/users/lisagjh/projects/3/views/1
 
 ### To Do
 Er zijn nog een aantal dingen te doen. 
-- [ ] focus state buttons
+- [x] focus state buttons
 - [ ] html semantiek
 
 Optioneel:
