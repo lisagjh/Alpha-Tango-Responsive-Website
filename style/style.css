@@ -516,7 +516,7 @@ footer {
   }
 }
 
-/* * media query */
+/** media query */
 
 @media (min-width: 430px) {
   .app-card {
