@@ -49,23 +49,37 @@ Caelor maakt gebruiksvriendelijke tools voor Confluence en Jira. De bezoekers va
 ## Proces
 _Lees meer hierover in [de wiki!](https://github.com/lisagjh/the-startup/wiki#dlc)_
 
-### Analyse
+#### Analyse
 Na de briefing heb ik de huidige homepage van Caelor bekeken, en de styleguide geanalyseerd. Aan het eind van week 1, na de meeting, ben ik gaan zoeken naar websites van vergelijkbare bedrijven en concurrenten, en fotos ter inspiratie, en dit alles in een whiteboard gezet.
 
-### Ontwerpen
+#### Ontwerpen
 Ik heb eerst een schets gemaakt voor mobiele schermen, en hier een breakdown van gemaakt. De schets heb ik daarna beter uitgewerkt met kleur in Procreate. 
 
-### Bouwen
+#### Bouwen
 Ik had al vrij snel een begin met de mobile first techniek, en heb ik mijn ontwerp gerealiseerd in code.
 
-### Integreren
+#### Integreren
 De website staat live op github
 
-### Testen
+#### Testen
 Er is een usertest gedaan, een lighthouse test, en er is een HTMl validator gebruikt.
+
+
+## Checklist
+
+### Projectboard
+https://github.com/users/lisagjh/projects/3/views/1
+
+### To Do
+Er zijn nog een aantal dingen te doen. 
+- [ ] scroll-snap in de carousel, zodat de items gecentreerd in het scherm staab
+- [ ] focus state buttons
+- [ ] html semantiek
+
+Optioneel:
+- [ ] animaties toevoegen
+
 
 ## Licentie
 This project is licensed under the terms of the [MIT license](./LICENSE).
-
-## Checklist
 
