@@ -1,16 +1,35 @@
 # Alpha Tango: Caelor Rebrand
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-De odprachtgever, Alpha Tango, wilt een homepage voor het bedrijf Caelor waar zij een nieuwe visuele identiteit voor hebben gemaakt.
+De opdrachtgever, Alpha Tango, wilt een homepage voor het bedrijf Caelor waar zij een nieuwe visuele identiteit voor hebben gemaakt.
 
-## Beschrijving
+### Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 
-
-
 ![Untitled_Artwork](https://github.com/lisagjh/the-startup/assets/131701505/db6d7da2-51f9-4fa8-a60c-f86413244c18)
 
+De live versie is hier te bekijken: 
+
+https://lisagjh.github.io/the-startup/ 
+
 <!-- Voeg een link toe naar Github Pages 🌐-->
+
+## Inhoud
+
+* Beschrijving
+* Ontwerp
+* Kenmerken
+* Proces
+* Checklist
+
+## Ontwerp: probleem & oplossing
+
+_Alpha Tango is a creative studio, specialized in strategy, branding, design, and development. Our work is always at the intersection of design and technology._
+
+Alpha Tango heeft een nieuwe visuele identiteit gecreeerd voor Caelor. Nu moet hun website opnieuw ontworpen worden met deze nieuwe huisstijl.
+
+Caelor maakt gebruiksvriendelijke tools voor Confluence en Jira. De bezoekers van hun website zijn mensen uit het bedrijfsleven, die weten waar ze naar op zoek zijn. Hier moet de website dus ook op aan sluiten.
+
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
@@ -47,4 +66,6 @@ Er is een usertest gedaan, een lighthouse test, en er is een HTMl validator gebr
 
 ## Licentie
 This project is licensed under the terms of the [MIT license](./LICENSE).
+
+## Checklist
 
