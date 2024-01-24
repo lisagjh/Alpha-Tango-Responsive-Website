@@ -12,11 +12,10 @@ https://lisagjh.github.io/the-startup/
 
 ## Inhoud
 
-* Beschrijving
-* Ontwerp
-* Kenmerken
-* Proces
-* Checklist
+* [Ontwerp](https://github.com/lisagjh/Alpha-tango-the-startup/blob/main/README.md#ontwerp-probleem--oplossing)
+* [Kenmerken](https://github.com/lisagjh/Alpha-tango-the-startup/blob/main/README.md#kenmerken)
+* [Proces](https://github.com/lisagjh/Alpha-tango-the-startup/blob/main/README.md#proces)
+* [Checklist](https://github.com/lisagjh/Alpha-tango-the-startup/blob/main/README.md#checklist)
 
 ## Ontwerp: probleem & oplossing
 
