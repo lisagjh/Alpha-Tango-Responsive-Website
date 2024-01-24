@@ -75,6 +75,7 @@ Er zijn nog een aantal dingen te doen.
 - [ ] scroll-snap in de carousel, zodat de items gecentreerd in het scherm staab
 - [ ] focus state buttons
 - [ ] html semantiek
+- [ ] footer
 
 Optioneel:
 - [ ] animaties toevoegen
