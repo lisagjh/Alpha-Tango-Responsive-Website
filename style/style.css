@@ -318,7 +318,7 @@ main p {
   min-width: 16rem;
   max-width: 47rem;
   height: 100%;
-  border: 1px solid var(--grey-three);
+  /* border: 1px solid var(--grey-three); */
   border-radius: 0px 12px 12px 12px;
 }
 
@@ -374,7 +374,7 @@ main p {
   --spacing-big: 2rem;
   margin: 0 var(--spacing-big);
   border-radius: 6px;
-  border: 1px solid var(--grey-three);
+  /* border: 1px solid var(--grey-three); */
 
   img {
     align-self: center;
@@ -798,12 +798,6 @@ footer {
     a {
       color: var(--conf-primary-two);
     }
-  }
-
-  .conf-carousel-container,
-  .jira-carousel-container,
-  .app-card {
-    border: 1px solid var(--grey-four);
   }
 
   .carousel-btn {
