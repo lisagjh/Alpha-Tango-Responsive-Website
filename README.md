@@ -5,7 +5,9 @@ De opdrachtgever, Alpha Tango, wilt een homepage voor het bedrijf Caelor waar zi
 ![Untitled_Artwork 2](https://github.com/lisagjh/Alpha-Tango-Responsive-Website/assets/131701505/b5f99c14-f037-4e55-b53a-8c5471addc7e)
 
 ### Mobiele versie bekijken?
-Scan deze QR code op je mobiel:
+Scan deze QR code op je mobiel! 
+
+PS: zet ook eens de donkere modus aan.
 
 ![3735ee8a29b13c376a563aaac52185ed normaal](https://github.com/lisagjh/Alpha-Tango-Responsive-Website/assets/131701505/78a2bf18-a57d-4441-9b3d-e9ef4691397b)
 
