@@ -352,6 +352,7 @@ main p {
   scroll-snap-align: center;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  border: 1px solid  var(--grey-three)
 }
 
 .app-btns {
@@ -550,10 +551,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    /* grid-template-areas:
-      "one one"
-      "two three"
-      "four four"; */
   }
 
   .footer-list-one {
