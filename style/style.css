@@ -804,4 +804,10 @@ footer {
   .carousel-btn:hover {
     color: var(--grey-one);
   }
+
+  .jira-carousel, .conf-carousel {
+    border: 1px solid  var(--grey-four)
+  }
+
 }
+
