@@ -439,6 +439,7 @@ main p {
   align-content: center;
 
   .carousel-btn {
+    color: var(--grey-extra);
     background-color: transparent;
     font-size: 2.5rem;
     transition: scale 0.25s ease-in-out;
@@ -447,7 +448,7 @@ main p {
   }
 
   .carousel-btn:hover {
-    color: var(--grey-four);
+    color: var(--grey-five);
   }
 
   .carousel-btn:active {
@@ -463,6 +464,7 @@ main p {
   align-content: center;
 
   .carousel-btn {
+    color: var(--grey-extra);
     background-color: transparent;
     font-size: 2.5rem;
     transition: scale 0.25s ease-in-out;
@@ -471,7 +473,7 @@ main p {
   }
 
   .carousel-btn:hover {
-    color: var(--grey-four);
+    color: var(--grey-five);
   }
 
   .carousel-btn:active {
